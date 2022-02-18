@@ -8,13 +8,15 @@ button {
   font-weight: bolder;
   cursor: pointer;
   display: flex;
+  gap:0.5rem;
   justify-content: center;
   align-items: center;
   transition: 0.4s ease-in-out;
-
+  
   svg {
-    margin-left: 0.5rem;
+    // margin-left: 0.5rem;
     font-size: large;
+    transition:all 0.4s ease-in-out;
   }
 }
 .blue {
@@ -46,6 +48,27 @@ button {
     background-color: $buttonPinkColor;
     border: 0.1rem solid transparent;
     color: white;
+  }
+}
+
+.inverse-no_outline {
+  background-color: white;
+  color: $buttonPinkColor;
+  border: $buttonPinkColor none;
+  padding: 0.2rem;
+  transition: 0.4s ease-in-out;
+  svg{
+    fill: none;
+    stroke: $buttonPinkColor;
+    stroke-width: 2rem;
+    transform:scale(1.3);
+    overflow:visible;
+  }
+  &:hover {
+    color: white;
+    svg{
+      fill: $buttonPinkColor;
+    }
   }
 }
 

@@ -3,6 +3,8 @@
 .blog-container {
   height: 100%;
   width: 100%;
+  border-radius:10px;
+  overflow:hidden;
   background-color: white;
   border-radius: 0.4rem;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
@@ -11,23 +13,39 @@
     box-shadow: #f32a8f2f 5px 5px, #f32a8f1e 10px 10px, #f32a8f02 15px 15px;
   }
   .image {
-    height: 12rem;
+    height: 18rem;
     img {
-      height: 12rem;
+      height: 18rem;
+      object-fit:cover;
       width: 100%;
     }
   }
   .content {
     padding: 1rem;
-    .title {
-      h3 {
-        color: $headingColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .content-text{
+      display: flex;
+      flex-direction: column;  
+      .title {
+        margin-bottom: 0.3rem;
+        h3 {
+          color: $headingColor;
+        }
+      }
+      .subTitle {
+        p {
+          margin: 0;
+          color: $lightFontColor;
+        }
       }
     }
-    .subTitle {
-      p {
-        color: $lightFontColor;
-      }
+    .socialButtons{
+      display: flex;
+      gap:0.5rem;
+      justify-content: flex-end;
     }
   }
 }
