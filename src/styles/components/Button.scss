@@ -80,6 +80,20 @@ button {
       font-size: small;
     }
   }
+  
+  .inverse-no_outline {
+    svg{
+      stroke-width: 2.8rem;
+      transform:scale(1.5);
+    }
+    &:hover {
+      color: white;
+      svg{
+        fill: $buttonPinkColor;
+      }
+    }
+  }
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
