@@ -7,19 +7,20 @@ import Why from "./sections/Why";
 import Blogs from "./sections/Blogs";
 import ScrollToTop from "./components/ScrollToTop";
 import { motion } from "framer-motion";
+import { withRoot } from "./withRoot";
 
 function App() {
-  return (
-    <motion.div initial="hidden" animate="show">
-      <ScrollToTop />
-      <Starter />
-      <About />
-      <Why />
-      <Testimonials />
-      <Blogs />
-      <Footer />
-    </motion.div>
-  );
+	return (
+		<motion.div initial="hidden" animate="show">
+			<ScrollToTop />
+			<Starter />
+			<About />
+			<Why />
+			<Testimonials />
+			<Blogs />
+			<Footer />
+		</motion.div>
+	);
 }
 
 export default App;
