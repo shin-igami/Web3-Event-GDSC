@@ -59,6 +59,7 @@
     bottom:0;
     border-top: 0.2rem solid $primary64;
     cursor: default;
+    backdrop-filter: blur(8px);
 
     .content-text{
       display: flex;
