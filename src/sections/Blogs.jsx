@@ -22,8 +22,7 @@ function Blogs() {
           animate={controls}
           transition={{ duration: 1 }}
         >
-          <Title title="Speakers" color="pink" lineCenter={true} />
-          <p>Awesome workshops and talk-sessions with best in the industry</p>
+          <Title title="Speakers" color="web3" lineCenter={true} />
         </motion.div>
         <div className="blogs">
           <Blog

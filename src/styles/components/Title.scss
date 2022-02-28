@@ -4,7 +4,7 @@
   h2 {
     margin-bottom: 0.7rem;
     font-size: xx-large;
-    color: $headingColor;
+    color: $secondary;
   }
   div {
     height: 0.3rem;
@@ -12,7 +12,7 @@
     border-radius: 0.1rem;
   }
   div .blue {
-    background-color: $headingColor;
+    background-color: $primary;
   }
   div .pink {
     background-color: $pinkColor;
