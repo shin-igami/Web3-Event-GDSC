@@ -67,26 +67,26 @@ button {
   color: $primary;
   padding: 0.2rem;
   transition: 0.4s ease-in-out;
-  padding: 1rem;
+  padding: 0.6rem;
   border-radius: 50%;
   box-shadow: 0 0 0 0.2rem $primary56;
   svg{
     fill: none;
-    stroke: $primary;
+    stroke: $secondary;
     stroke-width: 2rem;
-    transform:scale(1.3);
+    transform:scale(1);
     overflow:visible;
   }
   
   &:hover {
-    background-color: $primary40; 
+    background-color: $primary64; 
     box-shadow: 
       0 0 0 0.2rem $primary56,
-      0 0 0.1rem 0.2rem $primary40;
+      0 0 0.1rem 0.2rem $primary40,
+      0 0 0.1rem 0.2rem $secondary;
     
     svg{
-      stroke: $primary90;
-      fill: $primary80;
+      fill: $secondary;
     }
   }
 }

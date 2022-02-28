@@ -20,18 +20,8 @@
       9px 9px 0px $primary24, 
       12px 12px 0px $primary8;
       .image img{
-          filter: grayscale(100);
-          &::after{
-            content: "";
-            position: absolute;
-            height:100%;
-            width: 100%;
-            top: 0;
-            left: 0;
-            background-color: $primary8;
-            z-index: 1;
-            pointer-events: none;
-          }
+          transform: scale(1);
+          filter: grayscale(0.8);
         }
   }
   .image {
@@ -42,7 +32,8 @@
       height: 100%;
       object-fit:cover;
       width: 100%;
-      filter: grayscale(100);
+      transform: scale(1.1);
+      filter: grayscale(1);
       transition:all 0.4s ease-in-out;
       position: relative;
     }
@@ -59,7 +50,7 @@
     bottom:0;
     border-top: 0.2rem solid $primary64;
     cursor: default;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(4px);
 
     .content-text{
       display: flex;
