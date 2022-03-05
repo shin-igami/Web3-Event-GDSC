@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import "../styles/sections/About.scss";
 import { reveal } from "../utils/Animations";
 import { textAnimation, cardAnimation } from "../utils/Animations";
-import Schedule from "../components/Schedule/Schedule";
+// import Schedule from "../components/Schedule/Schedule";
 
 function About() {
 	const [element, controls] = useScroll();
@@ -30,7 +30,7 @@ function About() {
 					<Title title="Schedule" color="blue" lineCenter={true} />
 					{/* <p>Our Sponsors</p> */}
 				</motion.div>
-				<Schedule />
+				{/* <Schedule /> */}
 				{/* <p>
 						We Believe that everyone deserves to have a website or online store. Innovation and simplicity
 						make us happy. Our mission is to help people achieve what they have passionate about it.

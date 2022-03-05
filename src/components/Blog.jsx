@@ -17,10 +17,10 @@ function Blog({ image, title, subTitle, variants, animate }) {
       <div className="content">
         <div className="content-text">
           <div className="title">
-            <h3>{title}</h3>
+            <h1>{title}</h1>
           </div>
           <div className="subTitle">
-            <p>{subTitle}</p>
+            <h3>{subTitle}</h3>
           </div>
         </div>
         <div className="socialButtons">

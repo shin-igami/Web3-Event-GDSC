@@ -28,6 +28,17 @@ button {
     color: $buttonBlueColor;
   }
 }
+.web3 {
+  background-color: $primary;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 0 4px 4px $primary8;
+  &:hover {
+    background-color: transparent;
+    border: 0.1rem solid $primary;
+    color: $primary;
+    box-shadow: 0 0 8px 6px $primary8;
+  }
+}
 
 .pink {
   background-color: $buttonPinkColor;
@@ -52,22 +63,30 @@ button {
 }
 
 .inverse-no_outline {
-  background-color: white;
-  color: $buttonPinkColor;
-  border: $buttonPinkColor none;
+  background-color: $primary24;
+  color: $primary;
   padding: 0.2rem;
   transition: 0.4s ease-in-out;
+  padding: 0.6rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.2rem $primary56;
   svg{
     fill: none;
-    stroke: $buttonPinkColor;
+    stroke: $secondary;
     stroke-width: 2rem;
-    transform:scale(1.3);
+    transform:scale(1);
     overflow:visible;
   }
+  
   &:hover {
-    color: white;
+    background-color: $primary64; 
+    box-shadow: 
+      0 0 0 0.2rem $primary56,
+      0 0 0.1rem 0.2rem $primary40,
+      0 0 0.1rem 0.2rem $secondary;
+    
     svg{
-      fill: $buttonPinkColor;
+      fill: $secondary;
     }
   }
 }

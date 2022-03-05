@@ -7,17 +7,35 @@
   overflow:hidden;
   background-color: white;
   border-radius: 0.4rem;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  box-shadow: 
+    $primary8 0px 5px 15px 0px,
+    0 0 0 0.2rem $primary64;
   transition: 0.4s ease-in-out;
+  position: relative;
+
   &:hover {
-    box-shadow: #f32a8f2f 5px 5px, #f32a8f1e 10px 10px, #f32a8f02 15px 15px;
+    box-shadow: 
+      3px 3px 0px $primary56, 
+      6px 6px 0px $primary40, 
+      9px 9px 0px $primary24, 
+      12px 12px 0px $primary8;
+      .image img{
+          transform: scale(1);
+          filter: grayscale(0.8);
+        }
   }
   .image {
-    height: 18rem;
+    height: 32rem;
+    width: 100%;
+    transition:all 0.4s ease-in-out;
     img {
-      height: 18rem;
+      height: 100%;
       object-fit:cover;
       width: 100%;
+      transform: scale(1.1);
+      filter: grayscale(1);
+      transition:all 0.4s ease-in-out;
+      position: relative;
     }
   }
   .content {
@@ -25,26 +43,35 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    background-color: $primary56;
+    position:absolute;
+    z-index: 1;
+    width: calc(100% - 2rem);
+    bottom:0;
+    border-top: 0.2rem solid $primary64;
+    cursor: default;
+    backdrop-filter: blur(4px);
+
     .content-text{
       display: flex;
       flex-direction: column;  
       .title {
-        margin-bottom: 0.3rem;
-        h3 {
-          color: $headingColor;
+        margin-bottom: 0;
+        h1 {
+          color: $secondary;
+          margin: 1rem 0 0.6rem 0;
         }
       }
       .subTitle {
-        p {
-          margin: 0;
-          color: $lightFontColor;
+        h3 {
+          margin: 0 0 0.8rem 0;
+          color: $primary;
         }
       }
     }
     .socialButtons{
       display: flex;
-      gap:0.5rem;
+      gap:1rem;
       justify-content: flex-end;
     }
   }
