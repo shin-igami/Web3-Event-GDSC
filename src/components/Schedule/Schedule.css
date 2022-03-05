@@ -1,0 +1,57 @@
+.schedule-super-title {
+  text-align: center;
+  font-family: avenir-bold;
+  color: #ff5f5d;
+  font-size: 24px;
+}
+
+.schedule-title {
+  text-align: center;
+  font-family: avenir-eb;
+  font-size: 60px;
+  color: #ffffff;
+  padding-bottom: 70px;
+}
+
+.day-btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.timeline-btn {
+  width: 30%;
+  height: 64px;
+  background: #393e82;
+  border-radius: 10px;
+  border: none;
+  font-family: avenir-bold;
+  font-size: 24px;
+  color: #ffffff;
+  margin: 0px 1rem;
+}
+
+@media (max-width: 1000px) {
+  .day-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-btn {
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .schedule-container {
+    padding-top: 50px;
+  }
+  
+  
+
+  .schedule-title {
+    padding-bottom: 10px;
+  }
+} 
