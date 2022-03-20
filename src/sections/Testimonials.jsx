@@ -5,6 +5,8 @@ import { useScroll } from "../components/useScroll";
 import { motion } from "framer-motion";
 import "../styles/sections/Testimonials.scss";
 import { textAnimation, cardAnimation } from "../utils/Animations";
+import elastic from "../assets/elastic.svg";
+import cloudinary from "../assets/cloudinary.svg";
 
 export default function Testimonials() {
 	const [element, controls] = useScroll();
@@ -21,32 +23,18 @@ export default function Testimonials() {
 					}}
 				>
 					<Title title="Sponsors" color="blue" lineCenter={true} />
-					<p>Our Sponsors</p>
+					{/* <p>Our Sponsors</p> */}
 				</motion.div>
 				<div className="testimonials">
-					<Testimonial
-						content="The best on the net! Software development saved my business. I use
-        Software development often. I am really satisfied with my Software
-        Development."
-						name="Trushit Vyas"
-						designation="Co-Founder"
-						variants={cardAnimation}
-						animate={controls}
-					/>
-					<Testimonial
-						content="Mobile application developer is exactly what out business has been lacing. I have gotten at least 50 times the value from mobile apllication."
-						name="Kishan H. Sheth"
-						designation="Founder & CEO"
-						variants={cardAnimation}
-						animate={controls}
-					/>
-					<Testimonial
-						content="Logo Design is the next killer app. We've used logo design for the last five years. Best. Product. Ever! Definetly worth the investment"
-						name="Romit Gandhi"
-						designation="Founder"
-						variants={cardAnimation}
-						animate={controls}
-					/>
+					<Testimonial img={elastic} />
+					<Testimonial img={elastic} />
+					<Testimonial img={elastic} />
+					<Testimonial img={elastic} />
+					<Testimonial img={elastic} />
+					<Testimonial img={elastic} />
+					<Testimonial img={cloudinary} />
+					<Testimonial img={cloudinary} />
+					<Testimonial img={cloudinary} />
 				</div>
 			</div>
 		</div>

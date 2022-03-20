@@ -1,76 +1,76 @@
 @import "../utils/Colors.scss";
 
 .blogs-container {
-  background-color: $bgLight;
-  .container {
-    margin: 0 10%;
+	background-color: $bgLight;
+	.container {
+		margin: 0 10%;
 
-    padding: 5rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    .title-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      .title {
-        margin-bottom: 1rem;
-      }
-      p {
-        color: $secondary;
-      }
-    }
-    .blogs {
-      margin-bottom: 2rem;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 4rem;
-      margin-top: 2.2rem;
-    }
-    .button-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
+		padding: 5rem 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		.title-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			.title {
+				margin-bottom: 1rem;
+			}
+			p {
+				color: $secondary;
+			}
+		}
+		.blogs {
+			margin-bottom: 2rem;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 4rem;
+			margin-top: 2.2rem;
+		}
+		.button-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .blogs-container {
-    .container {
-      .title-container {
-        p {
-          font-size: 1.8rem;
-        }
-      }
-      .blogs {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-  }
+@media screen and (max-width: 480px) {
+	.blogs-container {
+		.container {
+			.title-container {
+				p {
+					font-size: 1.8rem;
+				}
+			}
+			.blogs {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .blogs-container {
-    .container {
-      .title-container {
-        p {
-          font-size: 1.8rem;
-        }
-      }
-    }
-  }
+	.blogs-container {
+		.container {
+			.title-container {
+				p {
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .blogs-container {
-    .container {
-      .blogs {
-        gap: 1rem;
-      }
-    }
-  }
+	.blogs-container {
+		.container {
+			.blogs {
+				gap: 1rem;
+			}
+		}
+	}
 }
