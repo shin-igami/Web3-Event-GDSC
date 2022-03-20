@@ -8,17 +8,19 @@ import Blogs from "./sections/Blogs";
 import ScrollToTop from "./components/ScrollToTop";
 import { motion } from "framer-motion";
 import { withRoot } from "./withRoot";
+import Register from "./sections/Register";
 
 function App() {
 	return (
 		<motion.div initial="hidden" animate="show">
-			<ScrollToTop />
-			<Starter />
-			<About />
-			<Why />
+			{/* <ScrollToTop />
+			<Starter /> */}
+			<About/>
+			<Register/>
+			{/* <Why />
 			<Testimonials />
 			<Blogs />
-			<Footer />
+			<Footer /> */}
 		</motion.div>
 	);
 }
