@@ -13,14 +13,14 @@ import Register from "./sections/Register";
 function App() {
 	return (
 		<motion.div initial="hidden" animate="show">
-			{/* <ScrollToTop />
-			<Starter /> */}
-			<About/>
-			<Register/>
-			{/* <Why />
+			<ScrollToTop />
+			<Starter />
+			<About />
+			<Register />
+			<Why />
 			<Testimonials />
 			<Blogs />
-			<Footer /> */}
+			<Footer />
 		</motion.div>
 	);
 }
