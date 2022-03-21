@@ -23,6 +23,5 @@ function App() {
             <Footer />
         </motion.div>
     );
-}
 
 export default App;

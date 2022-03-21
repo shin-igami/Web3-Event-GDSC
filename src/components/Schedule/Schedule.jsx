@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { textAnimation, cardAnimation } from "../../utils/Animations";
 import Title from "../Title";
 import { useScroll } from "../useScroll";
+// import "../utils/Colors.scss";
+import "../../styles/utils/Colors.scss";
 
 const Schedule = () => {
 	const [day, setDay] = useState(0);
@@ -29,18 +31,26 @@ const Schedule = () => {
 				<button
 					className="timeline-btn"
 					onClick={() => setDay(0)}
-					style={day !== 0 ? { backgroundColor: "#393E82" } : { backgroundColor: "#FF5F5D" }}
-				>
-					Registration
-				</button>
-				<button
-					className="timeline-btn"
-					onClick={() => setDay(1)}
-					style={day !== 1 ? { backgroundColor: "#393E82" } : { backgroundColor: "#FF5F5D" }}
+					style={
+						day !== 0
+							? { backgroundColor: "rgba(144, 202, 249, 0.2)", border: "1px solid rgba(144, 202, 249, 0.8)" }
+							: { backgroundColor: "rgba(144, 202, 249, 0.6)", border: "1px solid rgba(144, 202, 249, 0.8)" }
+					}
 				>
 					Day 1
 				</button>
 				<button
+					className="timeline-btn"
+					onClick={() => setDay(1)}
+					style={
+						day !== 1
+							? { backgroundColor: "rgba(144, 202, 249, 0.2)", border: "1px solid rgba(144, 202, 249, 0.8)" }
+							: { backgroundColor: "rgba(144, 202, 249, 0.6) ", border: "1px solid rgba(144, 202, 249, 0.8)" }
+					}
+				>
+					Day 2
+				</button>
+				{/* <button
 					className="timeline-btn"
 					onClick={() => setDay(2)}
 					style={day !== 2 ? { backgroundColor: "#393E82" } : { backgroundColor: "#FF5F5D" }}
@@ -60,7 +70,7 @@ const Schedule = () => {
 					style={day !== 4 ? { backgroundColor: "#393E82" } : { backgroundColor: "#FF5F5D" }}
 				>
 					Results
-				</button>
+				</button> */}
 			</div>
 			<Timeline day={day} />
 		</div>
