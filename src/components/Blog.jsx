@@ -7,18 +7,6 @@ import "../styles/components/Blog.scss";
 function Blog({ image, title, subTitle, variants, animate }) {
 	return (
 		<motion.div className="blog-container" variants={variants} animate={animate}>
-			<div className="socialButtons">
-				<Button
-					// content="Read more"
-					color="inverse-no_outline"
-					icon={<FaLinkedinIn />}
-				/>
-				<Button
-					// content="Read more"
-					color="inverse-no_outline"
-					icon={<FaFacebookF />}
-				/>
-			</div>
 			<div className="image">
 				<img src={image} alt="Blog" />
 			</div>
@@ -30,6 +18,18 @@ function Blog({ image, title, subTitle, variants, animate }) {
 					<div className="subTitle">
 						<h3>{subTitle}</h3>
 					</div>
+				</div>
+				<div className="socialButtons">
+					<Button
+						// content="Read more"
+						color="inverse-no_outline"
+						icon={<FaLinkedinIn />}
+					/>
+					<Button
+						// content="Read more"
+						color="inverse-no_outline"
+						icon={<FaFacebookF />}
+					/>
 				</div>
 			</div>
 		</motion.div>
