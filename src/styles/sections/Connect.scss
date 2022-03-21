@@ -1,0 +1,81 @@
+@import '../utils/Colors.scss';
+
+.connect-container {
+  background-color: $bgLight;
+  .container {
+    margin: 0 10%;
+
+    padding: 0 0 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .title-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .title {
+        margin-bottom: 1rem;
+      }
+      p {
+        color: $secondary;
+      }
+    }
+    .blogs {
+      margin-bottom: 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4rem;
+      margin-top: 2.2rem;
+    }
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+
+      .padding-left {
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .blogs-container {
+    .container {
+      .title-container {
+        p {
+          font-size: 1.8rem;
+        }
+      }
+      .blogs {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .blogs-container {
+    .container {
+      .title-container {
+        p {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .blogs-container {
+    .container {
+      .blogs {
+        gap: 1rem;
+      }
+    }
+  }
+}
