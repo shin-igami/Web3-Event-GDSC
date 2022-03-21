@@ -10,20 +10,22 @@ import { motion } from 'framer-motion';
 import { withRoot } from './withRoot';
 import Register from './sections/Register';
 import Schedule from './sections/Schedule';
+import Connect from './sections/Connect';
 
 function App() {
-    return (
-        <motion.div initial="hidden" animate="show">
-            <ScrollToTop />
-            <Starter />
-            <About />
-            <Schedule />
-            <Register />
-            {/* <Why /> */}
-            <Testimonials />
-            <Blogs />
-            <Footer />
-        </motion.div>
-    );
+  return (
+    <motion.div initial="hidden" animate="show">
+      <ScrollToTop />
+      <Starter />
+      <About />
+      <Schedule />
+      <Register />
+      {/* <Why /> */}
+      <Testimonials />
+      <Blogs />
+      <Connect />
+      <Footer />
+    </motion.div>
+  );
 }
 export default App;
