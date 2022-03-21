@@ -1,13 +1,13 @@
-import React from "react";
-import Navbar from "../components/Navbar";
-import Button from "../components/Button";
-import { useScroll } from "../components/useScroll";
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-import { GoPlay } from "react-icons/go";
-import { motion } from "framer-motion";
-import WorkImage from "../assets/work.svg";
-import "../styles/sections/Starter.scss";
-import { headerAnimation, imageAnimation } from "../utils/Animations";
+import React from 'react';
+import Navbar from '../components/Navbar';
+import Button from '../components/Button';
+import { useScroll } from '../components/useScroll';
+import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
+import { GoPlay } from 'react-icons/go';
+import { motion } from 'framer-motion';
+import WorkImage from '../assets/work.svg';
+import '../styles/sections/Starter.scss';
+import { headerAnimation, imageAnimation } from '../utils/Animations';
 
 export default function Starter() {
   const [element, controls] = useScroll();
@@ -20,7 +20,7 @@ export default function Starter() {
           className="content"
           variants={headerAnimation}
           animate={controls}
-          transition={{ delay: 0.2, type: "tween" }}
+          transition={{ delay: 0.2, type: 'tween' }}
         >
           <h1>
             We Provide Solutions to Help You to Build or Grow Your Buisness!
@@ -43,7 +43,7 @@ export default function Starter() {
           className="image"
           variants={imageAnimation}
           animate={controls}
-          transition={{ type: "tween" }}
+          transition={{ type: 'tween' }}
         >
           <img src={WorkImage} alt="Work Image" />
         </motion.div>

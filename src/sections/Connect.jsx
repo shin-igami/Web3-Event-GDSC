@@ -19,22 +19,27 @@ function Connect() {
           transition={{ duration: 1 }}
         >
           <Title title="Connect" color="web3" lineCenter={true} />
-          <div
-            className="button-container"
-            variants={textAnimation}
-            animate={controls}
-          >
-            <Button
-              content="Join Discord"
-              className="inverse-no_outline"
-              variants={cardAnimation}
-            />
-            <Button
-              content="Follow Twitter"
-              className="inverse-no_outline padding-left"
-            />
-          </div>
+          <p className="subtext">
+            Joiin our Community........Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.{' '}
+          </p>
         </motion.div>
+        <div
+          className="button-container"
+          variants={textAnimation}
+          animate={controls}
+        >
+          <Button
+            content="Join Discord"
+            className="inverse-no_outline"
+            variants={cardAnimation}
+          />
+          <Button
+            content="Follow Twitter"
+            className="inverse-no_outline padding-left"
+          />
+        </div>
       </div>
     </div>
   );

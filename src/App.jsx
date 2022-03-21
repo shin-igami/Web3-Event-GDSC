@@ -19,12 +19,12 @@ function App() {
       <Starter />
       <About />
       <Schedule />
-      <Register />
+      <Blogs />
       {/* <Why /> */}
       <Testimonials />
-      <Blogs />
+      <Register />
       <Connect />
-      <Footer />
+      {/* <Footer /> */}
     </motion.div>
   );
 }
