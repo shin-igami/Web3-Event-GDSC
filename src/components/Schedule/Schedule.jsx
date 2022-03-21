@@ -15,17 +15,7 @@ const Schedule = () => {
 	return (
 		<div className="schedule-container" id="schedule">
 			{/* <h2 className="schedule-super-title">2021</h2> */}
-			<motion.h1
-				className="title-container schedule-title"
-				variants={textAnimation}
-				animate={controls}
-				transition={{
-					duration: 1,
-				}}
-			>
-				<Title title="Schedule" color="blue" lineCenter={true} />
-				{/* <p>Our Sponsors</p> */}
-			</motion.h1>
+			
 			{/* <h1 className="schedule-title">Schedule</h1> */}
 			<div className="day-btns">
 				<button
