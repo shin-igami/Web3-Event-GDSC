@@ -30,6 +30,8 @@
   display: flex;
   margin: auto;
   align-items: center;
+  border-radius: 4px;
+  transition: all 0.5s;
 }
 .register-button a {
   color: #3aa0f3;
@@ -42,7 +44,6 @@
   padding: 20px;
   width: 200px;
   border-radius: 4px;
-  transition: all 0.5s;
   text-align: center;
 }
 .register-button span {
