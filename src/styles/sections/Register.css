@@ -1,53 +1,53 @@
-@import "../utils/Colors.scss";
+@import '../utils/Colors.scss';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-.register{
-    background: #172B3E;
-    border: 2px solid #3AA0F3;
+.register {
+    background: #172b3e;
+    border: 2px solid #3aa0f3;
     display: flex;
-    font-family:  sans-serif;
+    font-family: sans-serif;
     color: white;
     padding: 60px 40px;
     letter-spacing: 1px;
 }
-.register-content{
+.register-content {
     width: 50%;
     padding: 0px 40px;
     font-size: medium;
     text-align: left;
 }
-.register-content hr{
+.register-content hr {
     margin-top: 0px;
     width: 13%;
     margin-left: 0px;
     height: 3.5px;
     background: rgba(58, 160, 243, 1);
-    border: 0px ;
-
+    border: 0px;
 }
-.register-content h1{
+.register-content h1 {
     margin-bottom: 0px;
 }
-.register-button{
+.register-button {
     display: flex;
     margin: auto;
     align-items: center;
-    
+    box-shadow: 3px 3px 0px $primary56, 6px 6px 0px $primary40, 9px 9px 0px $primary24,
+        12px 12px 0px $primary8;
 }
-.register-button a{
-    color: #3AA0F3;
+.register-button a {
+    color: #3aa0f3;
     text-decoration: none;
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
     line-height: 32px;
-    border: 1px solid #3AA0F3;
+    border: 1px solid #3aa0f3;
     padding: 20px;
     width: 200px;
     border-radius: 4px;
     transition: all 0.5s;
     text-align: center;
 }
-.register-button span{
+.register-button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -60,48 +60,46 @@
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
-  .register-button:hover span {
+}
+.register-button:hover span {
     padding-right: 25px;
-  }
-  
-  .register-button:hover span:after {
+}
+
+.register-button:hover span:after {
     opacity: 1;
     right: 0;
-  }
-  @media screen and (max-width : 1076px) {
-      .register-content{
-          margin: auto;
-          font-size: small;
-      }
-      .register{
-          
-          flex-direction: column;
-      }
-      .register-button{
-          margin-top: 40px;
-      }
-      .register-button a{
-          padding: 7px;
-          font-size: medium;
-      }
-  }
-  @media screen and (max-width : 625px){
-    .register-content{
+}
+@media screen and (max-width: 1076px) {
+    .register-content {
+        margin: auto;
+        font-size: small;
+    }
+    .register {
+        flex-direction: column;
+    }
+    .register-button {
+        margin-top: 40px;
+    }
+    .register-button a {
+        padding: 7px;
+        font-size: medium;
+    }
+}
+@media screen and (max-width: 625px) {
+    .register-content {
         margin: auto;
         font-size: smaller;
     }
-    .register{
-       
+    .register {
         flex-direction: column;
     }
-    .register-button{
+    .register-button {
         margin-top: 40px;
     }
-    .register-button a{
+    .register-button a {
         font-weight: 300;
         font-size: 15px;
         line-height: 20px;
         width: 150px;
     }
-  }
+}
