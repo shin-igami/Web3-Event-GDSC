@@ -1,108 +1,108 @@
-@import "../utils/Colors.scss";
+@import '../utils/Colors.scss';
 
 .blog-container {
-	height: 100%;
-	width: 100%;
-	border-radius: 10px;
-	overflow: hidden;
-	background-color: white;
-	border-radius: 0.4rem;
-	box-shadow: $primary8 0px 5px 15px 0px, 0 0 0 0.2rem $primary64;
-	transition: 0.4s ease-in-out;
-	position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 0.4rem;
+  box-shadow: $primary8 0px 5px 15px 0px, 0 0 0 0.2rem $primary64;
+  transition: 0.4s ease-in-out;
+  position: relative;
 
-	&:hover {
-		box-shadow: 3px 3px 0px $primary56, 6px 6px 0px $primary40, 9px 9px 0px $primary24,
-			12px 12px 0px $primary8;
-		.image img {
-			transform: scale(1);
-			filter: grayscale(0.8);
-		}
-	}
-	.image {
-		height: 32rem;
-		width: 100%;
-		transition: all 0.4s ease-in-out;
-		img {
-			height: 100%;
-			object-fit: cover;
-			width: 100%;
-			transform: scale(1.1);
-			filter: grayscale(1);
-			transition: all 0.4s ease-in-out;
-			position: relative;
-		}
-	}
+  &:hover {
+    box-shadow: 3px 3px 0px $primary56, 6px 6px 0px $primary40,
+      9px 9px 0px $primary24, 12px 12px 0px $primary8;
+    .image img {
+      transform: scale(1);
+      filter: grayscale(0.8);
+    }
+  }
+  .image {
+    height: 32rem;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+      transform: scale(1.1);
+      filter: grayscale(1);
+      transition: all 0.4s ease-in-out;
+      position: relative;
+    }
+  }
 
-	.content {
-		padding: 1rem;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		position: absolute;
-		z-index: 1;
-		width: calc(100% - 2rem);
-		bottom: 0;
-		background-color: $primary56;
-		border-top: 0.2rem solid $primary64;
-		cursor: default;
-		backdrop-filter: blur(4px);
-		.socialButtons {
-			display: flex;
-			// flex-direction: column;
-			gap: 1rem;
-			justify-content: flex-end;
-			// background-color: $primary56;
-			// border-top: 0.2rem solid $primary64;
-			// // cursor: default;
-			// backdrop-filter: blur(4px);
-		}
-		.content-text {
-			display: flex;
-			flex-direction: column;
-			.title {
-				margin-bottom: 0;
-				h1 {
-					color: $secondary;
-					margin: 1rem 0 0.6rem 0;
-				}
-			}
-			.subTitle {
-				h3 {
-					margin: 0 0 0.8rem 0;
-					color: $primary;
-				}
-			}
-		}
-	}
+  .content {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    width: calc(100% - 2rem);
+    bottom: 0;
+    background-color: $primary56;
+    border-top: 0.2rem solid $primary64;
+    cursor: default;
+    backdrop-filter: blur(4px);
+    .socialButtons {
+      display: flex;
+      // flex-direction: column;
+      gap: 1rem;
+      justify-content: flex-end;
+      // background-color: $primary56;
+      // border-top: 0.2rem solid $primary64;
+      // // cursor: default;
+      // backdrop-filter: blur(4px);
+    }
+    .content-text {
+      display: flex;
+      flex-direction: column;
+      .title {
+        margin-bottom: 0;
+        h1 {
+          color: $secondary;
+          margin: 1rem 0 0.6rem 0;
+        }
+      }
+      .subTitle {
+        h3 {
+          margin: 0 0 0.8rem 0;
+          color: $primary;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
-	.blog-container {
-		height: 36rem;
-		.image {
-			height: 28rem;
-			width: 100%;
-			img {
-				height: 28rem;
-			}
-		}
+  .blog-container {
+    height: 36rem;
+    .image {
+      height: 28rem;
+      width: 100%;
+      img {
+        height: 28rem;
+      }
+    }
 
-		.content {
-			padding: 1rem 1.6rem;
-			.title {
-				h3 {
-					font-size: 2.6rem;
-				}
-			}
-			.subTitle {
-				p {
-					font-size: 1.6rem;
-				}
-			}
-		}
-		.socialButtons {
-			gap: 1rem;
-		}
-	}
+    .content {
+      padding: 1rem 1.6rem;
+      .title {
+        h3 {
+          font-size: 2.6rem;
+        }
+      }
+      .subTitle {
+        p {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .socialButtons {
+      gap: 1rem;
+    }
+  }
 }

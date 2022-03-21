@@ -12,18 +12,18 @@ import Register from './sections/Register';
 import Schedule from './sections/Schedule';
 
 function App() {
-    return (
-        <motion.div initial="hidden" animate="show">
-            <ScrollToTop />
-            <Starter />
-            <About />
-            <Schedule />
-            <Register />
-            {/* <Why /> */}
-            <Testimonials />
-            <Blogs />
-            <Footer />
-        </motion.div>
-    );
+  return (
+    <motion.div initial="hidden" animate="show">
+      <ScrollToTop />
+      <Starter />
+      <About />
+      <Schedule />
+      <Blogs />
+      {/* <Why /> */}
+      <Testimonials />
+      <Register />
+      {/* <Footer /> */}
+    </motion.div>
+  );
 }
 export default App;
