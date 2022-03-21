@@ -1,7 +1,7 @@
 @import '../utils/Colors.scss';
 
 .connect-container {
-  background-color: $bgLight;
+  background-color: $bg;
   .container {
     margin: 0 10%;
 
@@ -20,6 +20,8 @@
       }
       p {
         color: $secondary;
+        width: 70%;
+        text-align: center;
       }
     }
     .blogs {
@@ -31,9 +33,11 @@
     }
     .button-container {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       padding-top: 20px;
+      width: 80%;
+      padding-top: 3.5rem;
 
       .padding-left {
         padding-left: 20px;

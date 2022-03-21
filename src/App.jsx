@@ -23,6 +23,7 @@ function App() {
       {/* <Why /> */}
       <Testimonials />
       <Register />
+      <Connect />
       {/* <Footer /> */}
     </motion.div>
   );
