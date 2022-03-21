@@ -22,14 +22,8 @@ export default function Starter() {
           animate={controls}
           transition={{ delay: 0.2, type: 'tween' }}
         >
-          <h1>
-            We Provide Solutions to Help You to Build or Grow Your Buisness!
-          </h1>
-          <p>
-            A professional web and mobile app development agency with over 100+
-            web and app developed. We provide a high- quality service in web and
-            mobile app development as well as in design.
-          </p>
+          <h1>The one stop Web3 Hackathon!</h1>
+          <p>Nice hackathon eh?</p>
           <div className="button-container">
             <Button content="Watch Video" icon={<GoPlay />} />
             <Button
