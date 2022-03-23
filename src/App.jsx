@@ -2,7 +2,7 @@ import React from 'react';
 import Testimonials from './sections/Testimonials';
 import About from './sections/About';
 import Footer from './sections/Footer';
-import Starter from './sections/Starter';
+import Hero from './sections/Hero';
 // import Why from "./sections/Why";
 import Blogs from './sections/Blogs';
 import ScrollToTop from './components/ScrollToTop';
@@ -16,7 +16,7 @@ function App() {
   return (
     <motion.div initial="hidden" animate="show">
       <ScrollToTop />
-      <Starter />
+      <Hero />
       <About />
       <Schedule />
       <Blogs />

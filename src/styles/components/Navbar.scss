@@ -1,8 +1,9 @@
-@import "../utils/Colors.scss";
+@import '../utils/Colors.scss';
 .navbar {
   margin: 2rem 0;
   display: flex;
   justify-content: space-between;
+  z-index: 3;
   .col {
     display: flex;
     justify-content: space-between;
