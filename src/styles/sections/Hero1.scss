@@ -5,23 +5,45 @@
   overflow-x: hidden;
   overflow-y: hidden;
   background: #0a1929;
-  background: url('./../../assets/hero_section/Desktop-bg.png') no-repeat center
-    center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   color: white;
   display: block;
   height: 100vh;
 
+  .cloud {
+    position: absolute;
+    top: 0%;
+    // left: -17%;
+    height: 100%;
+    z-index: 1;
+    transform: translateX(-20%);
+  }
   .person {
     position: absolute;
     top: 30%;
-    right: 20%;
+    right: 30%;
     height: 60vh;
     z-index: 2;
+  }
+  .particles1 {
+    position: absolute;
+    top: 0%;
+    right: 40%;
+    height: 300px;
+    z-index: 0;
+  }
+  .particles2 {
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    height: 300px;
+    z-index: 0;
+  }
+  .particles3 {
+    position: absolute;
+    top: 70%;
+    right: 30%;
+    height: 300px;
+    z-index: 0;
   }
 
   .container {
@@ -31,50 +53,25 @@
     .content {
       z-index: 4;
       padding: 0 10%;
-      margin-left: 10%;
       overflow-x: hidden;
       background-color: transparent;
       max-height: 100vh;
       height: 100vh;
-      // margin-top: 1rem;
-      width: 40vw;
-      // margin-right: 3rem;
-      .presents {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+      margin-top: 5rem;
+      margin-right: 3rem;
       h1 {
         font-size: 3rem;
         color: white;
-        span {
-          color: $primary;
-          filter: drop-shadow(1px 1px 17px rgba(255, 255, 255, 0.5));
-          -webkit-filter: drop-shadow(1px 1px 17px rgba(255, 255, 255, 0.5));
-          -moz-filter: drop-shadow(1px 1px 17px rgba(255, 255, 255, 0.5));
-          transition: 0.5s;
-        }
       }
       p {
-        width: 100%;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         color: white;
-        line-height: 1.5rem;
-        // text-align: center;
+        line-height: 1.9rem;
       }
       .button-container {
         display: flex;
-        margin-top: 10vh;
-        // justify-content: flex-start;
-        // justify-content: left;
         button {
           margin-right: 1rem;
-        }
-        .register-button {
-          margin: auto 0;
-          // position: absolute;
-          // left: 0;
         }
       }
     }

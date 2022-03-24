@@ -1,13 +1,13 @@
 import React from 'react';
 import Title from '../components/Title';
 import { motion } from 'framer-motion';
-import Schedule from '../components/Schedule/Schedule';
+// import Schedule from '../components/Schedule/Schedule';
 import { textAnimation, cardAnimation } from '../utils/Animations';
 import { useScroll } from '../components/useScroll';
 import '../styles/sections/Register.css';
 import { headerAnimation, imageAnimation } from '../utils/Animations';
-import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
-import { GoPlay } from 'react-icons/go';
+// import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
+// import { GoPlay } from 'react-icons/go';
 
 const Register = () => {
   const [element, controls] = useScroll();

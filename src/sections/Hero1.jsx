@@ -9,7 +9,12 @@ import WorkImage from '../assets/work.svg';
 import '../styles/sections/Register.css';
 import '../styles/sections/Hero.scss';
 import { headerAnimation, imageAnimation } from '../utils/Animations';
+import { ReactComponent as Cloud } from '../assets/hero_section/hero_cloud_img.svg';
 import { ReactComponent as Presents } from '../assets/hero_section/hero_gdsc_presents.svg';
+import { ReactComponent as Blob } from '../assets/hero_section/hero_blob.svg';
+import { ReactComponent as Particles1 } from '../assets/hero_section/hero_particles_1.svg';
+import { ReactComponent as Particles2 } from '../assets/hero_section/hero_particles_2.svg';
+import { ReactComponent as Particles3 } from '../assets/hero_section/hero_particles_3.svg';
 import { ReactComponent as Person } from '../assets/hero_section/hero_person.svg';
 
 export default function Hero() {
@@ -18,7 +23,11 @@ export default function Hero() {
   return (
     <div className="main-container" ref={element}>
       <Navbar />
+      <Cloud className="cloud" />
       <Person className="person" />
+      <Particles1 className="particles1" />
+      <Particles2 className="particles2" />
+      <Particles3 className="particles3" />
       <div className="container">
         <motion.div
           className="content"
@@ -26,19 +35,8 @@ export default function Hero() {
           animate={controls}
           transition={{ delay: 0.2, type: 'tween' }}
         >
-          <div className="presents">
-            <Presents />
-          </div>
-
-          <h1>
-            Web <span>3.0</span> Summit!
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat
-            nisl pretium fusce id velit. Vulputate mi sit amet mauris commodo
-            quis imperdiet massa tincidunt.
-          </p>
+          <h1>The one stop Web3 Hackathon!</h1>
+          <p>Nice hackathon eh?</p>
           <div className="button-container">
             <motion.div
               className="image register-button"

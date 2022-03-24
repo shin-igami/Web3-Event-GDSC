@@ -9,6 +9,7 @@
   padding: 7vh 3vw;
   padding-bottom: 10vh;
   letter-spacing: 1px;
+  /* z-index: 8; */
 }
 .about-content {
   display: flex;
