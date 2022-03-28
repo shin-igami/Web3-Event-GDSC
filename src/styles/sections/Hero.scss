@@ -2,8 +2,7 @@
 @import '../utils/Fonts.scss';
 
 .main-container {
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
   background: #0a1929;
   background: url('./../../assets/hero_section/Desktop-bg.png') no-repeat center
     center;
