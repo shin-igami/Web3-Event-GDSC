@@ -2,8 +2,6 @@
 @import '../utils/Fonts.scss';
 
 .main-container {
-  // margin: 0 10rem;
-  //   margin: 0 10%;
   overflow-x: hidden;
   overflow-y: hidden;
   background: #0a1929;
@@ -18,12 +16,55 @@
   display: block;
   height: 100vh;
 
+  @keyframes up-down {
+    0% {
+      transform: translateY(0rem);
+    }
+    50% {
+      transform: translateY(-1rem);
+    }
+    100% {
+      transform: translateY(0rem);
+    }
+  }
+  @keyframes sideways {
+    0% {
+      transform: translateX(0rem);
+    }
+    50% {
+      transform: translateX(-1rem);
+    }
+    100% {
+      transform: translateX(0rem);
+    }
+  }
+  @keyframes rotator {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
   .person {
     position: absolute;
     top: 30%;
     right: 20%;
     height: 60vh;
     z-index: 2;
+    animation: up-down 3s ease-in-out infinite;
+  }
+  .person {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    height: 60vh;
+    z-index: 2;
+    animation: up-down 3s ease-in-out infinite;
   }
 
   .container {
