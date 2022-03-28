@@ -1,4 +1,6 @@
 @import '../utils/Colors.scss';
+@import '../utils/Fonts.scss';
+
 .main-container {
   // margin: 0 10rem;
   //   margin: 0 10%;
@@ -28,9 +30,11 @@
     z-index: 4;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    font-family: 'Open Sans';
+    margin-top: -5%;
     .content {
       z-index: 4;
-      padding: 0 10%;
+      // padding: 0 10%;
       margin-left: 10%;
       overflow-x: hidden;
       background-color: transparent;
@@ -58,14 +62,14 @@
       }
       p {
         width: 100%;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         color: white;
-        line-height: 1.5rem;
+        line-height: 1.8rem;
         // text-align: center;
       }
       .button-container {
         display: flex;
-        margin-top: 10vh;
+        margin-top: 20px;
         // justify-content: flex-start;
         // justify-content: left;
         button {
@@ -94,13 +98,6 @@
           line-height: 2.5rem;
         }
       }
-      // .image {
-      //   margin-left: 2rem;
-      //   img {
-      //     height: 25rem;
-      //     width: 25rem;
-      //   }
-      // }
     }
   }
 }
@@ -130,6 +127,33 @@
       //     width: 30rem;
       //   }
       // }
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .person {
+    display: none;
+  }
+  .content {
+    width: 80vw !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-container {
+    // padding-bottom: 3rem;
+    .container {
+      .content {
+        h1 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 1.7rem;
+          line-height: 2.5rem;
+          letter-spacing: 0.5px;
+        }
+      }
     }
   }
 }
