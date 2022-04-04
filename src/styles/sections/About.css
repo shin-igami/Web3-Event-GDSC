@@ -11,6 +11,11 @@
   letter-spacing: 1px;
   /* z-index: 8; */
 }
+/* .about_card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+} */
 .about-content {
   display: flex;
   flex-direction: column;
@@ -21,6 +26,7 @@
 }
 .about-leftImage {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 40px;
 }
@@ -30,6 +36,7 @@
 }
 .about-rightImage {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 40px;
   margin-top: 60px;
@@ -65,8 +72,11 @@
   }
 }
 @media screen and (max-width: 625px) {
+  .content {
+    max-width: 60vw;
+  }
   .about-content {
-    font-size: smaller;
+    font-size: small;
   }
   .about-leftImage img {
     height: 100px;

@@ -92,7 +92,7 @@
 @media screen and (max-width: 625px) {
   .register-content {
     margin: auto;
-    font-size: smaller;
+    font-size: small;
   }
   .register {
     flex-direction: column;

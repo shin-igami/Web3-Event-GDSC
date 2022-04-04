@@ -6,7 +6,7 @@ import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import { GoPlay } from 'react-icons/go';
 import { motion } from 'framer-motion';
 import WorkImage from '../assets/work.svg';
-import '../styles/sections/Register.css';
+// import '../styles/sections/Register.css';
 import '../styles/sections/Hero.scss';
 import { headerAnimation, imageAnimation } from '../utils/Animations';
 import { ReactComponent as Presents } from '../assets/hero_section/hero_gdsc_presents.svg';
@@ -21,7 +21,7 @@ export default function Hero() {
       <Person className="person" />
       <div className="container">
         <motion.div
-          className="content"
+          className="hero_content"
           variants={headerAnimation}
           animate={controls}
           transition={{ delay: 0.2, type: 'tween' }}
@@ -33,7 +33,7 @@ export default function Hero() {
           <h1>
             Web <span>3.0</span> Summit!
           </h1>
-          <p>
+          <p className="presents_text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat
             nisl pretium fusce id velit. Vulputate mi sit amet mauris commodo

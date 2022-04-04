@@ -57,14 +57,6 @@
     z-index: 2;
     animation: up-down 3s ease-in-out infinite;
   }
-  .person {
-    position: absolute;
-    top: 30%;
-    right: 20%;
-    height: 60vh;
-    z-index: 2;
-    animation: up-down 3s ease-in-out infinite;
-  }
 
   .container {
     z-index: 4;
@@ -72,7 +64,7 @@
     grid-template-columns: repeat(2, 1fr);
     font-family: 'Open Sans';
     margin-top: -5%;
-    .content {
+    .hero_content {
       z-index: 4;
       // padding: 0 10%;
       margin-left: 10%;
@@ -143,9 +135,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  html {
-    font-size: 8px;
-  }
+  // html {
+  //   font-size: 8px;
+  // }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -172,11 +164,24 @@
 }
 
 @media screen and (max-width: 670px) {
-  .person {
-    display: none;
-  }
-  .content {
-    width: 80vw !important;
+  .main-container {
+    // padding-bottom: 3rem;
+    .person {
+      display: none;
+    }
+    .container {
+      .hero_content {
+        width: 80vw !important;
+        h1 {
+          font-size: 2.5rem;
+        }
+        p {
+          font-size: 0.9rem;
+          line-height: 1.2rem;
+          letter-spacing: 0.5px;
+        }
+      }
+    }
   }
 }
 
@@ -184,13 +189,13 @@
   .main-container {
     // padding-bottom: 3rem;
     .container {
-      .content {
+      .hero_content {
         h1 {
-          font-size: 3rem;
+          font-size: 2rem;
         }
         p {
-          font-size: 1.7rem;
-          line-height: 2.5rem;
+          font-size: 0.9rem;
+          line-height: 1.2rem;
           letter-spacing: 0.5px;
         }
       }
