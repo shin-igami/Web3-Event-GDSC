@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Web3-Event-GDSC/static/css/main.10e075eb.css",
+    "main.js": "/Web3-Event-GDSC/static/js/main.8c0689a6.js",
+    "static/media/blogImage2.jpg": "/Web3-Event-GDSC/static/media/blogImage2.9b1700efab8f94d3c876.jpg",
+    "static/media/Desktop-bg.png": "/Web3-Event-GDSC/static/media/Desktop-bg.9be75fd5ab1cbb48b5e9.png",
+    "static/media/blogImage1.jpg": "/Web3-Event-GDSC/static/media/blogImage1.5c51346bd48e3c4cc8cd.jpg",
+    "static/media/blogImage3.jpg": "/Web3-Event-GDSC/static/media/blogImage3.faeaff90e0e0dba20e30.jpg",
+    "static/media/hero_person.svg": "/Web3-Event-GDSC/static/media/hero_person.154a6933b632c424a697189a22b27996.svg",
+    "static/media/hero_gdsc_presents.svg": "/Web3-Event-GDSC/static/media/hero_gdsc_presents.600ed87fdc8ed78c686f0746c101d6aa.svg",
+    "static/media/cloudinary.svg": "/Web3-Event-GDSC/static/media/cloudinary.5a83a70e17eb7bddcc54e4373340aa80.svg",
+    "static/media/work.svg": "/Web3-Event-GDSC/static/media/work.1948bdf6bed9bca1ff9788d01a27ec30.svg",
+    "static/media/elastic.svg": "/Web3-Event-GDSC/static/media/elastic.d7053ec7b582741a9376f1473db7de52.svg",
+    "static/media/crypto_img.svg": "/Web3-Event-GDSC/static/media/crypto_img.3ef9c3cf02f4b63676e9dfeaea5044da.svg",
+    "static/media/metaverse_img.svg": "/Web3-Event-GDSC/static/media/metaverse_img.900f7fc0c4e133da464a85f8e54cc480.svg",
+    "static/media/nft_img.svg": "/Web3-Event-GDSC/static/media/nft_img.da30e04406858474a91015613c5db273.svg",
+    "static/media/blockchain_img.svg": "/Web3-Event-GDSC/static/media/blockchain_img.7d09a8192a715954868dc3829e69f676.svg",
+    "index.html": "/Web3-Event-GDSC/index.html",
+    "main.10e075eb.css.map": "/Web3-Event-GDSC/static/css/main.10e075eb.css.map",
+    "main.8c0689a6.js.map": "/Web3-Event-GDSC/static/js/main.8c0689a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10e075eb.css",
+    "static/js/main.8c0689a6.js"
+  ]
+}
