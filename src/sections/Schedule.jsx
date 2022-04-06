@@ -10,7 +10,7 @@ function About() {
   const [element, controls] = useScroll();
 
   return (
-    <div className="schedule-container" id="about" ref={element}>
+    <div className="schedule-container" id="services" ref={element}>
       <div className="container">
         <motion.div
           className="title-container"

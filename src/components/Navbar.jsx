@@ -39,11 +39,11 @@ export default function Navbar() {
             </li>
 
             <li>
-              <a href="#testimonial">Speakers</a>
+              <a href="#blog">Speakers</a>
             </li>
 
             <li>
-              <a href="#blog">Sponsors</a>
+              <a href="#testimonial">Sponsors</a>
             </li>
             <li>
               <Button color="blue" content="Register" text="blueText" />

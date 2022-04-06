@@ -77,32 +77,4 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .blog-container {
-    height: 36rem;
-    .image {
-      height: 28rem;
-      width: 100%;
-      img {
-        height: 28rem;
-      }
-    }
 
-    .content {
-      padding: 1rem 1.6rem;
-      .title {
-        h3 {
-          font-size: 2.6rem;
-        }
-      }
-      .subTitle {
-        p {
-          font-size: 1.6rem;
-        }
-      }
-    }
-    .socialButtons {
-      gap: 1rem;
-    }
-  }
-}
