@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Web3-Event-GDSC/static/css/main.4b6a5281.css",
-    "main.js": "/Web3-Event-GDSC/static/js/main.8c0689a6.js",
+    "main.js": "/Web3-Event-GDSC/static/js/main.1908a66d.js",
     "static/media/blogImage2.jpg": "/Web3-Event-GDSC/static/media/blogImage2.9b1700efab8f94d3c876.jpg",
     "static/media/Desktop-bg.png": "/Web3-Event-GDSC/static/media/Desktop-bg.9be75fd5ab1cbb48b5e9.png",
     "static/media/blogImage1.jpg": "/Web3-Event-GDSC/static/media/blogImage1.5c51346bd48e3c4cc8cd.jpg",
@@ -17,10 +17,10 @@
     "static/media/blockchain_img.svg": "/Web3-Event-GDSC/static/media/blockchain_img.7d09a8192a715954868dc3829e69f676.svg",
     "index.html": "/Web3-Event-GDSC/index.html",
     "main.4b6a5281.css.map": "/Web3-Event-GDSC/static/css/main.4b6a5281.css.map",
-    "main.8c0689a6.js.map": "/Web3-Event-GDSC/static/js/main.8c0689a6.js.map"
+    "main.1908a66d.js.map": "/Web3-Event-GDSC/static/js/main.1908a66d.js.map"
   },
   "entrypoints": [
     "static/css/main.4b6a5281.css",
-    "static/js/main.8c0689a6.js"
+    "static/js/main.1908a66d.js"
   ]
 }
