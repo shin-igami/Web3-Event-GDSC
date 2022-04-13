@@ -1,6 +1,6 @@
 @import '../utils/Colors.scss';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-.about {
+#about {
   background: #172b3e !important;
   /* border: 2px solid #3aa0f3; */
   display: flex;
